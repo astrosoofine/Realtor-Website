@@ -1,0 +1,274 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fafafa;
+}
+main{
+    position: relative;
+}
+nav{
+    background-color: rgb(165, 132, 42);
+    width: 100%;
+    padding: 20px 5%;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.active{
+    color: bisque;
+}
+.header{
+    text-align: center;
+    margin: 0 auto;
+    width:400px;
+    padding: 15px;
+}
+.header h1{
+    font-size: 50px;
+    font-family: 'Dancing script',sans-serif;
+}
+.header p{
+    font-size: 20px;
+}
+.content{
+    position: relative;
+}
+.header-image{
+    width: 650px;
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(images/Real-Estate.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: rgb(165, 132, 42);
+    padding: 25px;
+    position: absolute;
+    top:0;
+}
+.side-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color:black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    font-size: 14px;
+    transition: all .5s;
+}
+.side-active{
+    border: none;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.side-link:hover{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.person{
+    width: 300px;
+    height: 400px;
+    background: url(images/Profile\ picture.png);
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    transition: all .5s;
+    position: absolute;
+    top: -60px;
+    right: 0;
+    border-radius: 50%;
+
+}
+.person h1{
+    padding-top: 330px;
+    color: white;
+    display: none;
+    font-family: 'Dancing Script',sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.person:hover h1{
+    display: block;
+}
+
+.center{
+    width: 500px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    position: absolute;
+    top: 280px;
+    left:30%;
+}
+.center h1{
+    font-size: 50px;
+}
+.about-it{
+    background-color: rgb(165, 132, 42);
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase; 
+}
+.image{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(165, 132, 42);
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    animation: morph 3s linear infinite;
+}
+@keyframes morph{
+    0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
+.info{
+    text-align: center;
+    margin: 200px auto;
+    width:400px;
+    padding: 15px;
+}
+.info h3{
+    margin-bottom: 20px;
+}
+.info h1{
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+.info p{
+    margin-bottom: -150px;
+
+}
+.main-images{
+    display: flex;
+    margin-left:370px;
+    margin-bottom: 200px;
+}
+.house-image-1{
+    width: 200px;
+    height: 300px;
+    background: url(images/House.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.house-image-2{
+    width: 200px;
+    height: 300px;
+    background: url(images/House-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.house-image-3{
+    width: 200px;
+    height: 300px;
+    background: url(images/House-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.house-image-1 h3{
+    margin-top: 300px;
+    font-weight: lighter;
+}
+.house-image-2 h3{
+    margin-top: 300px;
+    font-weight: lighter;
+}
+.house-image-3 h3{
+    margin-top: 300px;
+    font-weight: lighter;
+}
+section{
+    position: relative;
+}
+.footer-info{
+    color: #fff;
+    background-color: rgb(219, 91, 44);
+    padding: 100px 100px;
+    width: 720px;
+    height: 500px;
+    
+}
+.footer-info h4{
+    margin-bottom: 20px;
+}
+.footer-info h1{
+    margin-bottom: 20px;
+}
+.footer-info p{
+    margin-bottom: 50px;
+}
+.footer-info a{
+    text-decoration: none;
+    color: #fff;
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    padding: 10px 30px;
+    transition: all .5s;
+}
+.fa-arrow-right{
+    margin-left: 20px;
+}
+.footer-image{
+    width: 300px;
+    height: 380px;
+    background: url(images/books.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 700px;
+    top: 80px;
+}
+.footer-image-1{
+    background: url(images/hallway.jpg);
+    width: 200px;
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 640px;
+    top: 130px;
+}
+.footer-info a:hover{
+    color: black;
+    background-color: #fff;
+
+}
+
